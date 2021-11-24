@@ -1,0 +1,23 @@
+<div class="Orders">
+    <h2>Flight</h2>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Order</th>
+        <th scope="col">Flight</th>
+        <th scope="col">Departure</th>
+        <th scope="col">Arrival</th>
+        <th scope="col">Day</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of dataUI">
+        <th >{{item.ordernumber}}</th>
+        <th >{{item.flight}}</th>
+        <th >YUI</th>
+        <th  >{{item.arrival}}</th>
+        <th >{{item.day}}</th>
+      </tr>
+      </tbody>
+    </table>
+  </div>

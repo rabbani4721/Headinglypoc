@@ -1,0 +1,9 @@
+p{
+    font-size:10px;
+    float:left; 
+    padding-top:15px;
+}
+h1.heading{
+    float:left;
+}
+.heading-app{display: flex;}

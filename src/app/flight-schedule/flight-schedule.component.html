@@ -1,0 +1,47 @@
+<div class="scheduleday1">
+  <div class="heading">
+      <h2>Scheduled Flights Day 1</h2>
+      <button  class="btn-viewSchedule" (click)="navigateToOrders(0)">View Order Schedule</button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Flight</th>
+      <th scope="col">Arrival</th>
+      <th scope="col">Departure</th>
+      <th scope="col">View Details</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of schedule">
+      <th *ngIf="item.day===1">{{item.flight_number}}</th>
+      <th *ngIf="item.day===1">{{item.departure_city}}</th>
+      <th *ngIf="item.day===1">{{item.arrival_city}}</th>
+      <th *ngIf="item.day===1"><button (click)="navigateToOrders(item.flight_number)">view Details</button></th>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="scheduleday2">
+  <h2>Scheduled Flights Day 2</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Flight</th>
+      <th scope="col">Arrival</th>
+      <th scope="col">Departure</th>
+      <th scope="col">View Details</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of schedule">
+      <th *ngIf="item.day===2">{{item.flight_number}}</th>
+      <th *ngIf="item.day===2">{{item.departure_city}}</th>
+      <th  *ngIf="item.day===2">{{item.arrival_city}}</th>
+      <th *ngIf="item.day===2"><button>view Details</button></th>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

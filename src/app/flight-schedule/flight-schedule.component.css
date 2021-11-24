@@ -1,0 +1,7 @@
+.scheduleday2,.scheduleday1{max-height: 350px;}
+button{    
+    background-color: #0062cc;
+    color: white;
+    border: none;
+}
+.btn-viewSchedule{float:right;margin-bottom: 20px;}
